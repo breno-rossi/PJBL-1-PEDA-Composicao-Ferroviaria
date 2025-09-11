@@ -43,8 +43,6 @@ O sistema dispõe de um menu interativo que permite ao usuário:
 - **Arquivos obrigatórios:**
   - Código-fonte Python (`*.py`)
   - Arquivo de persistência da composição (`*.pkl`)
-- **Envio:** Conforme orientação do Canvas/Tarefa
-- **Defesa:** Avaliação prática será realizada em questão específica da Prova 1
 
 ## Referências
 
