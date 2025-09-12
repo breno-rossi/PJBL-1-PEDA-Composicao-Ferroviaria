@@ -36,7 +36,6 @@ O sistema dispõe de um menu interativo que permite ao usuário:
 - **Python 3.x**
 - Utilização obrigatória do módulo `pickle` para persistência
 - Organização e modelagem conforme diagrama de classes fornecido no enunciado
-- Não altere os métodos da classe Deque original; apenas utilize-os via herança
 
 ## Entrega
 
