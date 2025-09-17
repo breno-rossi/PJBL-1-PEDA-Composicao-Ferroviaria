@@ -68,12 +68,12 @@ class MinhaClasse(Persistente):
 		self.__lista = nova_lista
 		self.salvar(self.__lista)
 
-### PROGRAMA PRINCIPAL ###
-# Cria a instância da classe que possui persistência herdada.
-objeto = MinhaClasse('persistDados.pkl')
-# Exibe a lista carregada (ou vazia).
-print("Lista atual:", objeto.obter_lista())
-# Atualiza com nova lista e persiste.
-objeto.atualizar_lista([10, 20, 30, 40, 50])
-# Exibe a lista atualizada.
-print("Lista atualizada:", objeto.obter_lista())
+# ### PROGRAMA PRINCIPAL ###
+# # Cria a instância da classe que possui persistência herdada.
+# objeto = MinhaClasse('persistDados.pkl')
+# # Exibe a lista carregada (ou vazia).
+# print("Lista atual:", objeto.obter_lista())
+# # Atualiza com nova lista e persiste.
+# objeto.atualizar_lista([10, 20, 30, 40, 50])
+# # Exibe a lista atualizada.
+# print("Lista atualizada:", objeto.obter_lista())

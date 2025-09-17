@@ -36,24 +36,3 @@ class Passageiro(Vagao):
         super().imprime()
         print(" (Passageiro)")
         print(f"Passageiros: {self.passageiros}")
-
-
-if __name__ == "__main__":
-    
-    locomotiva = Locomotiva(20, 150, 2500) #comprimento, peso, potencia
-    vagao_carga = Carga(17, 20, 15) #comprimento, peso, carga
-    vagao_passageiro = Passageiro(24, 40, 30) #comprimento, peso, passageiros
-
-    print("=== Teste dos métodos imprime() ===\n")
-    
-    print("Locomotiva:")
-    locomotiva.imprime()
-    print()
-    
-    print("Vagão de Carga:")
-    vagao_carga.imprime()
-    print()
-    
-    print("Vagão de Passageiro:")
-    vagao_passageiro.imprime()
-    print()
