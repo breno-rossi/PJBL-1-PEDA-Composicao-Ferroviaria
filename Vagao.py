@@ -1,48 +1,48 @@
 
 class Vagao:
     def __init__(self, comprimento, peso):
-        self._comprimento = comprimento
-        self._peso = peso
+        self.comprimento = comprimento
+        self.peso = peso
 
     def imprime(self):
-        print(f'--------------Dados do Vagão--------------------')
-        print (f'Comprimento: {self._comprimento}m')
-        print (f'Peso: {self._peso}Tons')
+        print(f"Comprimento: {self.comprimento} m, Peso: {self.peso} toneladas", end='')
 
 class Locomotiva(Vagao):
-    def  __init__(self, comprimento, peso, potencia):
+    def __init__(self, comprimento, peso, potencia):
         super().__init__(comprimento, peso)
-        self._potencia = potencia
+        self.potencia = potencia
         
     def imprime(self):
         super().imprime()
-        print(f'Potência: {self._potencia}HP')
+        print(" (Locomotiva)")
+        print(f"Potência: {self.potencia} HP")
    
 class Carga(Vagao):
-    def  __init__(self, comprimento, peso,carga):
+    def __init__(self, comprimento, peso, carga):
         super().__init__(comprimento, peso)
-        self._carga= carga
+        self.carga = carga
 
     def imprime(self):
         super().imprime()
-        print(f'Carga: {self._carga}ton')
+        print(" (Carga)")
+        print(f"Carga: {self.carga} ton")
 
 class Passageiro(Vagao):
-    def  __init__(self, comprimento, peso, capacidade):
+    def __init__(self, comprimento, peso, passageiros):
         super().__init__(comprimento, peso)
-        self._capacidade = capacidade
+        self.passageiros = passageiros
         
     def imprime(self):
         super().imprime()
-        print(f'Capacidade: {self._capacidade} ')
-        #print(f'Dados do Vagão de Passageiro - Capacidade: {self._capacidade}')
+        print(" (Passageiro)")
+        print(f"Passageiros: {self.passageiros}")
 
 
 if __name__ == "__main__":
     
-    locomotiva = Locomotiva(15, 5000, 3000) #comprimento, peso, potencia
-    vagao_carga = Carga(12, 3000, 10000) #comprimento, peso,carga
-    vagao_passageiro = Passageiro(14, 2500, 50) #comprimento, peso, capacidade
+    locomotiva = Locomotiva(20, 150, 2500) #comprimento, peso, potencia
+    vagao_carga = Carga(17, 20, 15) #comprimento, peso, carga
+    vagao_passageiro = Passageiro(24, 40, 30) #comprimento, peso, passageiros
 
     print("=== Teste dos métodos imprime() ===\n")
     
