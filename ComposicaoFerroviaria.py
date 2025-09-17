@@ -9,7 +9,9 @@ class ComposicaoFerroviaria(Deque, Persistente):
         # Inicializa o deque e pesistencia
         Deque.__init__(self, N)
         Persistente.__init__(self, nome_arquivo)
-        self.carregar() # Carrega dados do arquivo .pkl
+
+        # Carrega dados do arquivo .pkl
+        self.carregar() 
 
     def salvar(self):
         # Salva a composição inteira no arquivo .pkl
@@ -35,10 +37,12 @@ class ComposicaoFerroviaria(Deque, Persistente):
         locomotiva = Locomotiva(20, 150, 2500)
         self.addLast(locomotiva)
         
+        # Cria 50 vagões de passageiros
         for i in range(50):
             vagao_passageiro = Passageiro(24, 40, 30)
             self.addLast(vagao_passageiro)
         
+        # Cria 30 vagões de carga
         for i in range(30):
             vagao_carga = Carga(17, 20, 15)
             self.addLast(vagao_carga)
@@ -77,7 +81,6 @@ class ComposicaoFerroviaria(Deque, Persistente):
         locomotivas = 0
         passageiros = 0
         cargas = 0
-        
         
         for vagao in self._data:
             if vagao is not None:
