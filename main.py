@@ -2,7 +2,7 @@
 
 # Disciplina: PEDA
 # Professor: Dalton Vinicius Kozak
-# Aluno: Francisco Bley Ruthes
+# Aluno: Breno Rossi Duarte, Francisco Bley Ruthes e Stefan Seixas
 
 from ComposicaoFerroviaria import ComposicaoFerroviaria
 from Vagao import Locomotiva, Passageiro, Carga
